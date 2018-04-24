@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+    </head>
+    <body>
+        <p>Audio: </p><input type="file" id="audioFile" />
+        <h1>Playing: <span id="audioName"></span></h1>
+        <audio id="audioPlayer" controls/>
+        <select id="audioType">
+            <option value="original" default>Original</option>
+            <option value="instrumental">Instrumental</option>
+            <option value="voice">Voice</option>
+        </select>
+        <br>
+        <canvas id="audioCanvas" style="height: 300px"></canvas>
+        <script>
+            requirejs(["main"], () => {});
+        </script>
+    </body>
+</html>

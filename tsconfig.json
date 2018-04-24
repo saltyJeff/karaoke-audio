@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"outFile": "docs/main.js",
+		"sourceMap": true,
+		"moduleResolution": "node",
+		"module": "amd",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es5",
+		"lib": [
+			"es6",
+		  	"dom"
+		]
+	  },
+	  "include": [
+		  "src/**/*.ts"
+	  ],
+	  "exclude": [
+		  "node_modules"
+	  ]
+}
